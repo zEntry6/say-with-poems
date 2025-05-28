@@ -1,3 +1,0 @@
-# Abaikan file sensitif
-.env
-src/service/firebase.js
