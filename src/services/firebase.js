@@ -4,13 +4,13 @@ import { getFirestore, collection, addDoc, getDocs, orderBy, query, serverTimest
 
 // Firebase config - Ganti dengan konfigurasi Firebase Anda
 const firebaseConfig = {
-  apiKey: "AIzaSyDBvcAEE-9SQacrlNryc1s2QWcrjAbopZQ",
-  authDomain: "sanctuary-d03cd.firebaseapp.com",
-  projectId: "sanctuary-d03cd",
-  storageBucket: "sanctuary-d03cd.firebasestorage.app",
-  messagingSenderId: "651929472943",
-  appId: "1:651929472943:web:65ed1dc620f3828c2ce95a",
-  measurementId: "G-J4XEHSXHQP"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MSG_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
